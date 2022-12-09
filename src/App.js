@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import AddTodo from "./components/AddTodo/AddTodo";
+import Color from "./components/Color";
+import Like from "./components/Like";
+import RenderPic from "./components/RenderPic";
 import TodoList from "./components/TodoList/TodoList";
 
 const App = () => {
@@ -24,8 +27,11 @@ const App = () => {
   return (
     <div>
       {/* отображаем компонент AddTodo и передаем туда данные из App */}
-      <AddTodo handleTask={handleTask} todos={todos} setTodos={setTodos} />
+      {/* <AddTodo handleTask={handleTask} todos={todos} setTodos={setTodos} />
       <TodoList changeStatus={changeStatus} todos={todos} />
+      <Color /> */}
+      <Like />
+      <RenderPic />
     </div>
   );
 };
